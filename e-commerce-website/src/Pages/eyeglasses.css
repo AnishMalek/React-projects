@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.shape-section {
+  width: 100%;
+  padding: 55px 6%;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* IMPORTANT: extra horizontal scroll ko roke */
+  overflow-x: hidden;
+}
+
+.shape-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 35px;
+}
+
+/* Cards in ONE LINE */
+.shape-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 22px;
+
+  /* IMPORTANT: horizontal slider */
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding-bottom: 14px;
+  scroll-behavior: smooth;
+}
+
+/* Card */
+.shape-card {
+  min-width: 240px;
+  flex-shrink: 0;
+
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+
+  box-shadow: 0 10px 22px rgba(2, 6, 23, 0.06);
+  padding: 22px 10px;
+  text-align: center;
+}
+
+.shape-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.12);
+  border-color: #cbd5e1;
+}
+
+.shape-img {
+  width: 100%;
+  max-width: 140px;
+  height: 140px;
+  object-fit: contain;
+  transition: 0.25s ease;
+}
+
+.shape-card:hover .shape-img {
+  transform: scale(1.08);
+}
+
+.shape-name {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* Hide scrollbar (Chrome, Edge, Safari) */
+.shape-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar (Firefox) */
+.shape-wrapper {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar (IE / old Edge) */
+.shape-wrapper {
+  -ms-overflow-style: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .shape-section {
+    padding: 45px 5%;
+  }
+
+  .shape-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .shape-card {
+    min-width: 210px;
+  }
+
+  .shape-img {
+    max-width: 120px;
+    height: 120px;
+  }
+
+  .shape-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shape-title {
+    font-size: 20px;
+  }
+
+  .shape-card {
+    min-width: 190px;
+  }
+}
