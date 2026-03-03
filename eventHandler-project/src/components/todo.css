@@ -1,0 +1,140 @@
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: #1e1f26;
+  color: #e4e6eb;
+}
+
+/* ===== Container ===== */
+.todo-container {
+  width: 92%;
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+/* ===== Form ===== */
+.todo-form {
+  background-color: #2a2c36;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #3a3c46;
+
+  width: 100%;
+  max-width: 420px;   /* 👈 form chhota */
+  margin: 0 auto 50px auto;  /* 👈 center */
+}
+
+.todo-form h2 {
+  margin-bottom: 25px;
+  font-weight: 500;
+  color: #4fd1c5;
+  text-align: center;
+}
+
+/* Inputs */
+.todo-form input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #3a3c46;
+  background-color: #23242d;
+  color: #e4e6eb;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.todo-form input:focus {
+  outline: none;
+  border-color: #4fd1c5;
+}
+
+/* Button */
+.todo-form button {
+  width: 100%;
+  padding: 13px;
+  border-radius: 6px;
+  border: none;
+  background-color: #4fd1c5;
+  color: #1e1f26;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.todo-form button:hover {
+  opacity: 0.9;
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2c36;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #3a3c46;
+}
+
+/* Header */
+table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #9ca3af;
+  background-color: #23242d;
+}
+
+/* Rows */
+table td {
+  padding: 16px;
+  border-top: 1px solid #3a3c46;
+  font-size: 14px;
+}
+
+table tr:hover {
+  background-color: #32343f;
+}
+
+/* Remove last border */
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== Buttons ===== */
+table button {
+  padding: 6px 14px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: 0.2s ease;
+}
+
+/* Edit */
+table button:first-child {
+  background-color: #4fd1c5;
+  color: #1e1f26;
+}
+
+/* Delete */
+table button:last-child {
+  background-color: transparent;
+  color: #f87171;
+  border: 1px solid #f87171;
+}
+
+table button:last-child:hover {
+  background-color: #f87171;
+  color: #1e1f26;
+}
+
+/* ===== Error ===== */
+h2 {
+  text-align: center;
+  color: #f87171;
+}
