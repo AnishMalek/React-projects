@@ -1,0 +1,85 @@
+/* Wrapper */
+.product-form-wrapper {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+}
+
+/* Card */
+.product-form {
+  width: 420px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.product-form h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #d4af37;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+}
+
+/* Focus Effect */
+.input-group input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+/* Label */
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #888;
+  font-size: 13px;
+  transition: 0.3s;
+  pointer-events: none;
+  background: #fff;
+  padding: 0 5px;
+}
+
+/* Floating Label */
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 11px;
+  color: #d4af37;
+}
+
+/* Button */
+.product-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #d4af37, #ffd700);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}

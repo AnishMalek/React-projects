@@ -1,0 +1,88 @@
+/* Container */
+.reg-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+}
+
+/* Form Card */
+.reg-box {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-top: 3px solid #c9a34e; 
+}
+
+/* Title */
+.reg-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+.reg-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.reg-input:focus {
+  border-color: #c9a34e;
+  box-shadow: 0 0 5px rgba(201, 163, 78, 0.3);
+}
+
+/* Button */
+.reg-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #c9a34e;
+  background: transparent;
+  color: #c9a34e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reg-button:hover {
+  background: #c9a34e;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(201, 163, 78, 0.4);
+}
+
+/* Footer */
+.reg-footer {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.reg-footer span {
+  color: #c9a34e;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login-link {
+  color: #c9a34e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
