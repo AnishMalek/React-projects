@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background: #f4f6f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.pm-container {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+/* Card */
+.pm-card, .pm-table-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+/* Form */
+.pm-form {
+  display: flex;
+  gap: 10px;
+}
+
+.pm-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.pm-form input:focus {
+  border-color: #6366f1;
+}
+
+/* Button */
+.pm-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pm-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Table */
+.pm-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center; 
+}
+
+.pm-table th {
+  background: #6366f1;
+  color: white;
+  padding: 14px;
+  font-weight: 500;
+}
+
+.pm-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Row hover */
+.pm-table tbody tr:hover {
+  background: #f9fafb;
+  transition: 0.2s;
+}
+
+/* Buttons */
+.edit-btn {
+  background: #22c55e;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #16a34a;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
