@@ -11,7 +11,7 @@ import {
   Globe,
   Cpu
 } from "lucide-react";
-import "../Main.css";
+import "../main.css";
 import "./Team.css";
 
 // SVG Brand Icons for high reliability
